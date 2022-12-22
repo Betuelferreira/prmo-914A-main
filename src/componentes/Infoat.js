@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, Text } from 'react-native';
+import { View, Image, Text, TouchableOpacity } from 'react-native';
 import Txt from "../componentes/Texto";
 import Clima from '../componentes/informaçao_clima';
 /* const imagem= "../componentes/nchuva.png" */
@@ -28,7 +28,7 @@ export default function Infoat() {
       <View style={{borderColor:"#ffffff", borderWidth: 1, backgroundColor:"#427bff",  width: "50%", height: "50%", borderBottomEndRadius: 20}}> <Clima icone = 'activity' tempo = 'PRESSURE' info = '1014 mbar'/></View>
       <View style={{marginTop: 10, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%'}}>
         <Txt negrito="bold" texto = 'Today' tamanho = {14} alinhamento = 'right'></Txt>
-        <Txt negrito="bold" cor = "gray" texto = 'Next 7 Days >' tamanho = {14}></Txt>
+      <TouchableOpacity onPress={() => {console.log("aaa")}}> <Txt negrito="bold" cor = "gray" texto = 'Next 7 Days >' tamanho = {14}></Txt> </TouchableOpacity>
       </View>
       
       
