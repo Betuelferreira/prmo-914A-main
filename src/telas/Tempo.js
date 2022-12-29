@@ -7,8 +7,9 @@ export default function Telas() {
  return (
   <View style={{ flex: 1, backgroundColor: '#427bff'}}>
 
-    <Txt tamanho={15} texto='&lt;'  cor="#FFFFFF" ></Txt>
+    
     <View style={{ flexDirection: "row", display: "flex", justifyContent: "center", width: "100vw" }}>
+      <Txt tamanho={20} texto='&lt;'  cor="#FFFFFF" ></Txt>
       <Txt negrito="bold" tamanho={15} texto="MACEIÓ, " cor="#FFFFFF" ></Txt>
       <Txt negrito="row" tamanho={15} texto="Alagas" cor="#FFFFFF"></Txt>
       
