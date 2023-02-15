@@ -13,7 +13,7 @@ export default function Main() {
 
       <View style={{ display: 'flex', alignItems: "center" }}>
 
-        <View style={{ flexDirection: "row", display: "flex", justifyContent: "flex-start", width: "85vw", }}>
+        <View style={{ flexDirection: "row", display: "flex", justifyContent: "flex-start", width: "85vw"}}>
 
 
 

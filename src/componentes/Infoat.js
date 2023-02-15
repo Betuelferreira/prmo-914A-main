@@ -6,11 +6,11 @@ import Clima from '../componentes/informaçao_clima';
 
 export default function Infoat() {
   return (
-    <View style={{ marginTop:30, width: "85vw", height: "60vh", backgroundColor: "#427bff", borderRadius: 20, }} >
+    <View style={{ marginTop: 30, width: "85%", height: "60%", backgroundColor: "#427bff", borderRadius: 20, }} >
 
-      <View style={{ width: "85vw", height: "70%", backgroundColor: "#427bff", position: "absolute", top: 0, borderRadius: 20, display: 'flex', alignItems: "center" }}>
+      <View style={{ width: "85%", height: "70%", backgroundColor: "#427bff", position: "absolute", top: 0, borderRadius: 20, display: 'flex', alignItems: "center" }}>
 
-        <Image  source={require("../imagens/nchuva.png")} style={{ top: 10, width:90, height:90 }} /> 
+        <Image source={require("../imagens/nchuva.png")} style={{ top: 10, width: 90, height: 90 }} />
 
         <Txt posicao="absolute" topo={100} tipo="arial " negrito="bold" tamanho={30} texto="Chuva Pesada" cor="#FFFFFF" ></Txt>
 
@@ -20,18 +20,22 @@ export default function Infoat() {
 
       </View>
 
-      <View style={{ width: "85vw", height: "30%", backgroundColor: "#427bff", position: "absolute", bottom: 0, borderRadius: 20, flexDirection:"row", flexWrap:"wrap"}}>
+      <View style={{ width: "85%", height: "30%", backgroundColor: "#427bff", position: "absolute", bottom: 0, borderRadius: 20, flexDirection: "row", flexWrap: "wrap" }}>
 
-      <View style={{borderColor:"#ffffff", borderWidth: 1, backgroundColor:"#427bff",  width: "50%", height: "50%"}}> <Clima icone = 'wind' tempo = 'WIND' info = '19.2km/h'/> </View>
-      <View style={{borderColor:"#ffffff", borderWidth: 1, backgroundColor:"#427bff",  width: "50%", height: "50%"}}> <Clima icone = 'thermometer' tempo = 'FEELS LIKE' info = '25°'/> </View>
-      <View style={{borderColor:"#ffffff", borderWidth: 1, backgroundColor:"#427bff",  width: "50%", height: "50%", borderBottomLeftRadius: 20}}> <Clima icone = 'sun' tempo = 'INDEX UV' info = '2'/></View>
-      <View style={{borderColor:"#ffffff", borderWidth: 1, backgroundColor:"#427bff",  width: "50%", height: "50%", borderBottomEndRadius: 20}}> <Clima icone = 'activity' tempo = 'PRESSURE' info = '1014 mbar'/></View>
-      <View style={{marginTop: 10, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%'}}>
-        <Txt negrito="bold" texto = 'Today' tamanho = {14} alinhamento = 'right'></Txt>
-      <TouchableOpacity onPress={() => {console.log("aaa")}}> <Txt negrito="bold" cor = "gray" texto = 'Next 7 Days >' tamanho = {14}></Txt> </TouchableOpacity>
-      </View>
-      
-      
+        <View style={{ borderColor: "#ffffff", borderWidth: 1, backgroundColor: "#427bff", width: "50%", height: "50%" }}> <Clima icone='wind' tempo='WIND' info='19.2km/h' /> </View>
+
+        <View style={{ borderColor: "#ffffff", borderWidth: 1, backgroundColor: "#427bff", width: "50%", height: "50%" }}> <Clima icone='thermometer' tempo='FEELS LIKE' info='25°' /> </View>
+
+        <View style={{ borderColor: "#ffffff", borderWidth: 1, backgroundColor: "#427bff", width: "50%", height: "50%", borderBottomLeftRadius: 20 }}> <Clima icone="sun" tempo='INDEX UV' info='2' /></View>
+
+        <View style={{ borderColor: "#ffffff", borderWidth: 1, backgroundColor: "#427bff", width: "50%", height: "50%", borderBottomEndRadius: 20 }}> <Clima icone='activity' tempo='PRESSURE' info='1014 mbar' /></View>
+        
+        <View style={{ marginTop: 10, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+          <Txt negrito="bold" texto='Today' tamanho={14} alinhamento='right'></Txt>
+          <TouchableOpacity onPress={() => { console.log("aaa") }}> <Txt negrito="bold" cor="gray" texto='Next 7 Days >' tamanho={14}></Txt> </TouchableOpacity>
+        </View>
+
+
       </View>
 
 

@@ -11,8 +11,12 @@ export default function App() {
   return (
     
     <NavigationContainer>
-      <Stack.Navigator>
-        {/* <Stack.Screen name="Home" component={Main}/> */}
+      <Stack.Navigator 
+        screenOptions={{
+          headerShown: false
+        }}
+      >
+{/*         <Stack.Screen name="Home" component={Main}/>  */}
         <Stack.Screen name="Tempo" component={Telas}/>
         
       </Stack.Navigator>

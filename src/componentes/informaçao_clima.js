@@ -10,8 +10,8 @@ export default function Clima(props) {
             <Icon name= {props.icone} size={25} color="white"></Icon>
        </View>
        <View style={{width: '55%', alignItems: 'flex-start', justifyContent: 'space-evenly', height: '100%'}}>
-            <Txt texto = {props.tempo} cor = 'white' tamanho = {12}></Txt>
-            <Txt texto = {props.info} cor = 'white' tamanho = {12}></Txt>
+            <Txt texto={props.tempo} cor = 'white' tamanho = {12}></Txt>
+            <Txt texto={props.info} cor = 'white' tamanho = {12}></Txt>
        </View>
    </View>
   );
