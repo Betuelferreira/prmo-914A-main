@@ -23,7 +23,7 @@ export default function Main() {
 
         </View>
 
-        <Infoat > </Infoat>
+       <Infoat > </Infoat> 
 
 
       </View>
