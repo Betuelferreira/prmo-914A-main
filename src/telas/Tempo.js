@@ -34,37 +34,37 @@ export default function Telas() {
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[0].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
-        <Text>{data.daily[0].temp.day}</Text>
+        <Text style={styles.texto}>{data.daily[0].temp.day}</Text>
       </View>
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
-        <Text>{data.daily[1].temp.day}</Text>
+        <Text style={styles.texto}>{data.daily[1].temp.day}</Text>
       </View>
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
-        <Text>{data.daily[2].temp.day}</Text>
+        <Text style={styles.texto}>{data.daily[2].temp.day}</Text>
       </View>
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
-        <Text>{data.daily[3].temp.day}</Text>
+        <Text style={styles.texto}>{data.daily[3].temp.day}</Text>
       </View>
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[4].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
-        <Text>{data.daily[4].temp.day}</Text>
+        <Text style={styles.texto}>{data.daily[4].temp.day}</Text>
       </View>
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[5].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
-        <Text>{data.daily[5].temp.day}</Text>
+        <Text style={styles.texto}>{data.daily[5].temp.day}</Text>
       </View>
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[6].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
-        <Text>{data.daily[6].temp.day}</Text>
+        <Text style={styles.texto}>{data.daily[6].temp.day}</Text>
       </View>
 
     </View>
@@ -86,5 +86,12 @@ const styles = StyleSheet.create({
   },
   temp: {
 
+  },
+
+  texto:{
+    fontFamily:"arial",
+    fontSize:"20",
+    color:"#ffff",
+    fontWeight:"bold"
   }
 })
