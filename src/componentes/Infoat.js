@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Image, Text, TouchableOpacity } from 'react-native';
 import Txt from "../componentes/Texto";
-import Clima from '../componentes/informaçao_clima';
-const imagem= "../componentes/nchuva.png"
+import Clima from '../componentes/informacao_clima';
+/* const imagem= "../componentes/nchuva.png" */
 
 export default function info() {
   return (
