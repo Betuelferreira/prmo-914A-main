@@ -39,12 +39,21 @@ export default function Telas() {
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[1].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
+<<<<<<< Updated upstream
         <Text style={styles.texto}>{data.daily[1].temp.day}</Text>
+=======
+        <Text
+        style={styles.texto}>{data.daily[1].temp.day}</Text>
+>>>>>>> Stashed changes
       </View>
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[2].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
+<<<<<<< Updated upstream
         <Text style={styles.texto}>{data.daily[2].temp.day}</Text>
+=======
+        <Text style={styles.texto} >{data.daily[2].temp.day}</Text>
+>>>>>>> Stashed changes
       </View>
       <View style={styles.card}>
         <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.daily[3].weather[0].icon}@2x.png` : null }} style={{ marginRight: "10%", width: 30, height: 30 }} />
@@ -87,11 +96,22 @@ const styles = StyleSheet.create({
   temp: {
 
   },
+<<<<<<< Updated upstream
 
   texto:{
     fontFamily:"arial",
     fontSize:"20",
     color:"#ffff",
     fontWeight:"bold"
+=======
+  texto: {
+    fontFamily: "arial",
+    fontSize: "120%",
+    color: "#ffff",
+    fontWeight: 'bold',
+    bosition: """
+
+>>>>>>> Stashed changes
   }
+
 })
