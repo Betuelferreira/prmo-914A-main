@@ -7,13 +7,13 @@ import Lista from "../componentes/Lista";
 
 export default function Main() {
   return (
-    <View style={{ flex: 1, alignItems:"center" }}>
+    <View >
 
       <Icone></Icone>
 
       <View style={{ display: 'flex', alignItems: "center" }}>
 
-        <View style={{ flexDirection: "row", display: "flex", justifyContent: "flex-start", width: "85vw"}}>
+        <View style={{ flexDirection: "row", display: "flex", justifyContent: "flex-start", width: "85%" }}>
 
 
 
@@ -23,13 +23,12 @@ export default function Main() {
 
         </View>
 
-       <Infoat > </Infoat> 
+        <Infoat > </Infoat>
 
 
       </View>
-
-      <Lista></Lista>
-
+      <Lista/>
+      
     </View>
   );
 }
