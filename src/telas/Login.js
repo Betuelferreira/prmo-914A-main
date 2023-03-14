@@ -20,16 +20,18 @@ export default function Main() {
 
           <Txt negrito="bold" tamanho={28} texto="MACEIÓ, " cor="BLACK" ></Txt>
           <Txt negrito="row" tamanho={28} texto="ALAGOAS" cor="#00000"></Txt>
-
+        
         </View>
 
         <Infoat > </Infoat>
-
-
+        
       </View>
-      <Lista/>
       
+      {/* <Lista/> */}
     </View>
+    
+    
+    
   );
 }
 
