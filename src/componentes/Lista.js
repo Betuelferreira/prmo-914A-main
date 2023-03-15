@@ -13,7 +13,7 @@ export default function Lista() {
  return (
 
 
-  <ScrollView horizontal  showsHorizontalScrollIndicator={false} style={{height: "40%", width:"100%",}}>
+  <ScrollView horizontal  showsHorizontalScrollIndicator={false} style={{height: "50%", width:"100%", }}>
     
      <Carta hora="14:00" image={nchuva} temperatura="Now"></Carta>  
      <Carta hora="15:00" image={nuvem} temperatura="28°"></Carta>  

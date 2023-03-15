@@ -3,13 +3,14 @@ import Txt from "../componentes/Texto";
 import Infoat from "../componentes/Infoat";
 import Icone from "../componentes/Icone";
 import Lista from "../componentes/Lista";
+import { Text } from "react-native-web";
 /* import Icon from "react-native-vector-icons/AntDesign"; */
 
 export default function Main() {
   return (
     <View >
-
-      <Icone></Icone>
+      
+     <Icone></Icone>
 
       <View style={{ display: 'flex', alignItems: "center" }}>
 
@@ -27,7 +28,7 @@ export default function Main() {
         
       </View>
       
-      {/* <Lista/> */}
+      <Lista/>
     </View>
     
     
