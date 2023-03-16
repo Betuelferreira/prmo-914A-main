@@ -18,7 +18,10 @@ export default function info() {
 
           <Txt tipo="arial" tamanho={90} texto="24°" cor="#FFFFFF" ></Txt>
 
-          <View style={{ width: "100%", height: "40%", backgroundColor: "#427bff", borderRadius: 20, flexDirection: "row", flexWrap: "wrap" }}>
+          
+
+      </View>
+      {/* <View style={{ width: "100%", height: "40%", backgroundColor: "#427bff", borderRadius: 20, flexDirection: "row", flexWrap: "wrap" }}>
 
             <View style={{ borderColor: "#ffffff", borderWidth: 1, backgroundColor: "#427bff", width: "50%", height: "50%" }}> <Clima icon='wind' tempo='WIND' info='19.2km/h' /> </View>
 
@@ -26,17 +29,16 @@ export default function info() {
 
             <View style={{ borderColor: "#ffffff", borderWidth: 1, backgroundColor: "#427bff", width: "50%", height: "50%", borderBottomLeftRadius: 20 }}> <Clima icon="sun" tempo='INDEX UV' info='2' /></View>
 
-            <View style={{ borderColor: "#ffffff", borderWidth: 1, backgroundColor: "#427bff", width: "50%", height: "50%", borderBottomEndRadius: 20 }}> <Clima icon='activity' tempo='PRESSURE' info='1014 mbar' /></View>
+            <View style={{ borderColor: "#ffffff", borderWidth: 1, backgroundColor: "#427bff", width: "50%", height: "50%", borderBottomEndRadius: 20 }}> <Clima icon='activity' tempo='PRESSURE' info='1014 mbar' />
+            </View>
 
-            <View style={{ marginTop: 10, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+            <View style={{ marginTop: 5, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
               <Txt negrito="bold" texto='Today' tamanho={14} alinhamento='right'></Txt>
               <TouchableOpacity onPress={() => { console.log("aaa") }}> <Txt negrito="bold" cor="gray" texto='Next 7 Days >' tamanho={14}></Txt> </TouchableOpacity>
             </View>
 
 
-          </View>
-
-      </View>
+      </View> */}
     </View>
   );
 }
