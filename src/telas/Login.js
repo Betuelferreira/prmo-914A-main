@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { View, SafeAreaView} from "react-native";
 import Txt from "../componentes/Texto";
 import Infoat from "../componentes/Infoat";
 import Icone from "../componentes/Icone";
@@ -8,7 +8,7 @@ import { Text } from "react-native-web";
 
 export default function Main() {
   return (
-    <View >
+    <SafeAreaView style={{flex: 1}} >
       
      <Icone></Icone>
 
@@ -24,12 +24,12 @@ export default function Main() {
           
         </View>
         
-        <Infoat > </Infoat>
+        <Infoat/>
         
       </View>
       
-      {/* <Lista/> */}
-    </View>
+      <Lista/>
+    </SafeAreaView>
     
     
     
