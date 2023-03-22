@@ -28,7 +28,7 @@ export default function Main() {
         
       </View>
       
-      <Lista/>
+      {/* <Lista/> */}
     </SafeAreaView>
     
     
