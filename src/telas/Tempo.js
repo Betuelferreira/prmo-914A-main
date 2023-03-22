@@ -93,8 +93,8 @@ const styles = StyleSheet.create({
   },
 
   texto: {
-    fontFamily: "arial",
-    fontSize: "120%",
+    
+    fontSize: "100%",
     color: "#ffff",
     fontWeight: 'bold',
     
