@@ -77,10 +77,6 @@ export default function Telas() {
 }
 
 const styles = StyleSheet.create({
-  card: {
-    flexDirection: "row",
-    margin: "5%"
-  },
   header: {
     maginTop: 5,
     flexDirection: "row",
@@ -91,16 +87,13 @@ const styles = StyleSheet.create({
   temp: {
 
   },
-
   texto: {
-    
     fontSize: "100%",
     color: "#ffff",
     fontWeight: 'bold',
-    
-  }
-
-
-  
-
+  },
+  card: {
+    flexDirection: "row",
+    margin: "5%"
+  },
 })

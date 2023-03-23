@@ -26,7 +26,7 @@ export default function Main() {
         
         <Infoat/>
          
-        <View style={{ marginTop: 10, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+        <View style={{ padding: 10, marginTop: 40, marginBottom: 10, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
           <Txt negrito="bold" texto='Today' tamanho={14} alinhamento='right'></Txt>
           <Txt negrito="bold" cor="gray" texto='Next 7 Days >' tamanho={14}></Txt> 
         </View>
