@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
     marginTop: "5%",
     backgroundColor: '#477FFF',
     width: "80%",
-    height: 460,
+    height: 470,
     borderRadius: "5%",
     alignItems: "center"
   },
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     width: '100%',
     height: '32%',
-    marginTop: 29,
+    marginTop: 17,
   },
   card: {
     width: '50%',

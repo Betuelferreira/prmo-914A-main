@@ -3,7 +3,7 @@ import { View, Image } from 'react-native';
 import Txt from "../componentes/Texto";
 export default function carta(props) {
  return (
-   <View style={{border:"gray 1px solid",display:"flex",  justifyContent: "space-around", alignItems: "center", marginLeft:30, borderRadius:10, width:"18%", height:"100%", backgroundColor:"" }}> 
+   <View style={{border:"gray 1px solid",display:"flex",  justifyContent: "space-around", alignItems: "center", marginLeft:30, borderRadius:10, width:"18%", height:"100%", backgroundColor:"gray" }}> 
     
     
     <Txt cor = "#000" tamanho={10} texto={props.hora}></Txt> 
