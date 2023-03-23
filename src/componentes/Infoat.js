@@ -18,24 +18,35 @@ export default function info() {
   }
 
   return (
+   // view azul maior
     <View style={styles.container}>
+
       <Image source={{ uri: data ? `http://openweathermap.org/img/wn/${data.current.weather[0].icon}@4x.png` : null }} style={styles.img} />
+
       <Text style={styles.txt_description}>{data.current.weather[0].description}</Text>
-      <Text>{`${Date(data.current.dt)}`}</Text>
+      <Text style={styles.textoCard}>{`${Date(data.current.dt)}`}</Text>
+
       <Text style={styles.texto}>{`${(data.current.temp).toFixed(0)}°`}</Text>
+
+   {/*  view dos cards */}
       <View style={styles.dados}>
+
         <View style={styles.card}>
-          <Text>WIND</Text>
+          <Text style={styles.textoCard}>WIND</Text>
         </View>
+
         <View style={styles.card}>
-          <Text>FEELS LIKE</Text>
+          <Text  style={styles.textoCard}>FEELS LIKE</Text>
         </View>
+
         <View style={styles.card}>
-          <Text>INDEX UV</Text>
+          <Text  style={styles.textoCard}>INDEX UV</Text>
         </View>
+
         <View style={styles.card}>
-          <Text>PRESSURE</Text>
+          <Text  style={styles.textoCard}>PRESSURE</Text>
         </View>
+
       </View>
     </View>
   );
@@ -44,9 +55,9 @@ export default function info() {
 const styles = StyleSheet.create({
   container: {
     marginTop: "5%",
-    backgroundColor: 'blue',
+    backgroundColor: '#477FFF',
     width: "80%",
-    height: 350,
+    height: 400,
     borderRadius: "5%",
     alignItems: "center"
   },
@@ -74,11 +85,18 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     width: '100%',
     height: '32%',
+    marginTop: 10,
+    /* backgroundColor: "black", */
   },
   card: {
     width: '50%',
     borderBottomWidth: 0,    
     borderWidth: 0.5,
     borderColor: 'white',
+  },
+  textoCard:{
+    textAlign:'center',
+    marginTop: 5,
+    color: "#fff",
   }
 })
