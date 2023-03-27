@@ -8,6 +8,7 @@ import { NavigationContainer } from '@react-navigation/native';
 const Stack = createStackNavigator();
 
 export default function App() {
+  
   return (
     
     <NavigationContainer>
@@ -25,4 +26,3 @@ export default function App() {
 
   );
 }
-

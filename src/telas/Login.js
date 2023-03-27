@@ -1,4 +1,4 @@
-import { View, SafeAreaView} from "react-native";
+import { View, SafeAreaView, TouchablebleOpacity } from "react-native";
 import Txt from "../componentes/Texto";
 import Infoat from "../componentes/Infoat";
 import Icone from "../componentes/Icone";
@@ -8,9 +8,9 @@ import { Text } from "react-native-web";
 
 export default function Main() {
   return (
-    <SafeAreaView style={{flex: 1}} >
-      
-     <Icone></Icone>
+    <SafeAreaView style={{ flex: 1 }} >
+
+      <Icone></Icone>
 
       <View style={{ display: 'flex', alignItems: "center" }}>
 
@@ -21,24 +21,26 @@ export default function Main() {
 
           <Txt negrito="bold" tamanho={28} texto="MACEIÓ, " cor="BLACK" ></Txt>
           <Txt negrito="row" tamanho={28} texto="ALAGOAS" cor="#00000"></Txt>
-          
+
         </View>
-        
-        <Infoat/>
-         
+
+        <Infoat />
+
         <View style={{ padding: 10, marginTop: 40, marginBottom: 10, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
           <Txt negrito="bold" texto='Today' tamanho={14} alinhamento='right'></Txt>
-          <Txt negrito="bold" cor="gray" texto='Next 7 Days >' tamanho={14}></Txt> 
+          {/* <TouchablebleOpacity> 
+            <Txt negrito="bold" cor="gray" texto='Next 7 Days >' tamanho={14} > </Txt>
+          </TouchablebleOpacity> */}
         </View>
 
         <Lista/>
       </View>
-      
-      
+
+
     </SafeAreaView>
-    
-    
-    
+
+
+
   );
 }
 
