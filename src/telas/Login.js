@@ -3,17 +3,24 @@ import Txt from "../componentes/Texto";
 import Infoat from "../componentes/Infoat";
 import Icone from "../componentes/Icone";
 import Lista from "../componentes/Lista";
-import { Text } from "react-native-web";
+import { Button, Text } from "react-native-web";
+import React, { useState, useEffect } from 'react';
+
+
 /* import Icon from "react-native-vector-icons/AntDesign"; */
 
-export default function Main() {
+
+export default function Main({ navigation }) {
+ 
+
+
   return (
     <SafeAreaView style={{ flex: 1 }} >
+
 
       <Icone></Icone>
 
       <View style={{ display: 'flex', alignItems: "center" }}>
-
         <View style={{ flexDirection: "row", display: "flex", justifyContent: "flex-start", width: "85%" }}>
 
 
@@ -26,14 +33,14 @@ export default function Main() {
 
         <Infoat />
 
-        <View style={{ padding: 10, marginTop: 40, marginBottom: 10, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
-          <Txt negrito="bold" texto='Today' tamanho={14} alinhamento='right'></Txt>
-          {/* <TouchablebleOpacity> 
-            <Txt negrito="bold" cor="gray" texto='Next 7 Days >' tamanho={14} > </Txt>
-          </TouchablebleOpacity> */}
+        <View style={{ padding: 10, marginTop: 40, marginBottom: 10, display: 'flex', flexDirection: 'row-reverse', justifyContent: 'space-between', width: '100%' }}>
+          <Button
+            title="Next 7 Days"
+            onPress={() => navigation.navigate("Telas")}
+          />
         </View>
 
-        <Lista/>
+        <Lista />
       </View>
 
 

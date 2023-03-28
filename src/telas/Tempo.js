@@ -1,22 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, Image, StyleSheet, Text, ActivityIndicator } from 'react-native';
+import { View, Image, StyleSheet, Text, ActivityIndicator, Button } from 'react-native';
 import Txt from "../componentes/Texto";
 import Icone from '../componentes/Icone';
 import url from '../services/openweather'
 
-export default function Telas() {
-  const [data, setData] = useState()
-  const [isLoading, setLoading] = useState(true)
-
-
-  useEffect(() => {
-    fetch(url).then((res) => res.json()).then((data) => { setData(data), setLoading(false) })
-  }, [])
-
-  if (isLoading) {
-    return <ActivityIndicator />
-  }
-
+export default function Telas({ navigation }) {
   return (
     <View style={{ flex: 1, backgroundColor: '#427bff' }}>
 
@@ -70,9 +58,11 @@ export default function Telas() {
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
         <Text style={styles.texto}>{data.daily[6].temp.day}</Text>
       </View>
-
+      <Button
+        title="Return"
+        onPress={() => navigation.navigate("Main")}
+      />
     </View>
-
   );
 }
 
