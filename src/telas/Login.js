@@ -11,8 +11,6 @@ import React, { useState, useEffect } from 'react';
 
 
 export default function Main({ navigation }) {
- 
-
 
   return (
     <SafeAreaView style={{ flex: 1 }} >

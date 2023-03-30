@@ -5,6 +5,16 @@ import Icone from '../componentes/Icone';
 import url from '../services/openweather'
 
 export default function Telas({ navigation }) {
+  const [data, setData] = useState()
+  const [isLoading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetch(url).then((res) => res.json()).then((data) => { setData(data), setLoading(false) })
+  }, [])
+
+  if (isLoading) {
+    return <ActivityIndicator />
+  }
   return (
     <View style={{ flex: 1, backgroundColor: '#427bff' }}>
 
