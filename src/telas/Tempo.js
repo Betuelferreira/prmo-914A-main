@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Image, StyleSheet, Text, ActivityIndicator, Button } from 'react-native';
+import { View, Image, StyleSheet, Text, ActivityIndicator, Button, TouchableOpacity } from 'react-native';
 import Txt from "../componentes/Texto";
 import Icone from '../componentes/Icone';
 import url from '../services/openweather'
@@ -21,8 +21,12 @@ export default function Telas({ navigation }) {
 
       <View style={styles.header}>
         {/*  <Txt tamanho={20} texto='&lt;'  cor="#FFFFFF" ></Txt> */}
+        <TouchableOpacity style={styles.botao}
+        
+        onPress={() => navigation.navigate("Main")}
+      >&lt;</TouchableOpacity>
         <Txt negrito="bold" tamanho={15} texto="MACEIÓ, " cor="#FFFFFF" ></Txt>
-        <Txt negrito="row" tamanho={15} texto="Alagoas" cor="#FFFFFF"></Txt>
+        <Txt mdireito={70} negrito="row" tamanho={15} texto="Alagoas" cor="#FFFFFF"></Txt>
 
       </View>
 
@@ -68,10 +72,7 @@ export default function Telas({ navigation }) {
         <Txt negrito="bold" tamanho={20} texto="MACEIÓ, " cor="#FFFFFF"></Txt>
         <Text style={styles.texto}>{data.daily[6].temp.day}</Text>
       </View>
-      <Button
-        title="Return"
-        onPress={() => navigation.navigate("Main")}
-      />
+      
     </View>
   );
 }
@@ -96,4 +97,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     margin: "5%"
   },
+  botao: {
+    
+    color: "#fff",
+    marginRight: 80,
+    fontSize: 20
+
+  }
+
 })
